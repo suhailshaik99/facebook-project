@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/5968/5968764.png">
+</head>
+<body>
+    <main>
+        <header id="bodyheading">
+            <h1>facebook</h1>
+        </header>
+        <section>
+            <div id="form1">
+                <div id="subheading">
+                    <header id="newaccountcreationheading">
+                        <h2>Create a new account</h2>
+                    </header>
+                        <p>It's quick and easy.</p><hr>
+                </div>
+                <div id="signupform">
+                    <form name="signup form" action="/action_page.php">
+                        <input type="text" name="FirstName" placeholder="First Name" required>
+                        <input type="text" name="LastName" placeholder="Last Name" required>
+                        <br>
+                        <br>
+                        <input type="email" name="Email" placeholder="Email Address" required width="50px">
+                        <br>
+                        <br>
+                        <input type="password" name="Password" placeholder="New Password">
+                        <br>
+                        <p style="margin-left: 20px;"><small>Date of Birth</small></p>
+                        <input type="date" name="DateOfBirth" >
+                        <p style="margin-left: 20px;"><small>Gender</small></p>
+                        <input type="radio" id="male" name="Gender" value="male">
+                        <label for="male">Male</label> &nbsp; &nbsp; 
+                        <input type="radio" id="female" name="Gender" value="female">
+                        <label for="female">Female</label>
+                        <br>
+                        <p id="info1"><small>People who use our service may have uploaded your contact information to Facebook.<a href="https://www.facebook.com/help/637205020878504">Learn more</a></small></p>
+                        <p id="info2"><small>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</small></p>
+                        <br>
+                        <input type="submit" name="submit" id="submit" value="Sign Up">   
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
