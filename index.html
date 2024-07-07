@@ -13,15 +13,16 @@
             <h1 id="fbheading">facebook</h1>
         </header>
         <section>
+            <form action="">
             <div id="main-div">
-                <div id="create-account">
+                <div id="create-account" style="margin-bottom: 8px;">
                     <h2>Create a new account</h2>
                     <p>It's quick and easy.</p>
                 </div>
                 <hr>
                 <div class="form-elements">
-                    <input class="namebox" type="text" placeholder="First name">
-                    <input class="namebox" type="text" placeholder="Surname">
+                    <input class="namebox" type="text" placeholder="First name" required>
+                    <input class="namebox" type="text" placeholder="Surname" required>
                 </div>
                 <div id="dateofbirth">
                     <span class="dob">Date of Birth</span>
@@ -68,7 +69,7 @@
                         <option value="">Jul</option>
                         <option value="">Aug</option>
                         <option value="">Sep</option>
-                        <option value="">Aug</option>
+                        <option value="">Oct</option>
                         <option value="">Nov</option>
                         <option value="">Dec</option>
                     </select>
@@ -98,19 +99,43 @@
 
                 <div id="gender">
                     <span class="dob">Gender</span>
-
-                    <!-- <select class="datebox" name="Date" id="">
-                        
-                    </select>
-                    <select class="datebox" name="Month" id="">
-                        
-                    </select>
-                    <select class="datebox" name="" id=""> -->
-                        
-                    </select>
+                    <div class="gend">
+                        <label for="female" class="radio">Female</label>
+                        <input id="female" type="radio" name="gender" value="female" class="radioselection">
+                    </div>
+                    <div class="gend">
+                        <label for="male" class="radio">Male</label>
+                        <input id="male" type="radio" name="gender" value="male" class="radioselection">
+                    </div>
+                    <div class="gend">
+                        <label for="custom" class="radio">Custom</label>
+                        <input id="custom" type="radio" name="gender" value="custom" class="radioselection">
+                    </div>  
                 </div>
 
+                <div id="email-address">
+                    <input type="email" placeholder="Mobile number or email address" class="email">
+                    <input type="password" placeholder="New password" class="email">
+                </div>
+
+                <div id="information-div">
+                    <p class="para" style="margin-top: 8px;">
+                        People who use our service may have uploaded your contact information to Facebook. Learn more.
+                    </p>
+                    <p class="para" style="margin-bottom: 15px;">
+                        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.<br/>You may receive SMS notifications from us and can opt out at any time.
+                    </p>
+                </div>
+
+                <div id="signup-div">
+                    <button type="submit" class="button">Sign Up</button>
+                </div>
+
+                <div id="signup-div" style="margin-top: 20px;">
+                    <p class="already"><a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzIwMzY2OTA5LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">Already have an account?</a></p>
+                </div>
             </div>
+        </form>
         </section>
     </main>
 </body>
